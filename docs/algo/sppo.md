@@ -4,11 +4,11 @@ Last updated: 05/28/2025.
 
 verl provides a community recipe implementation for the paper [Self-Play Preference Optimization for Language Model Alignment](https://arxiv.org/abs/2405.00675). SPPO can significantly enhance the performance of an LLM without strong external signals such as responses or preferences from GPT-4. It can outperform the model trained with iterative direct preference optimization (DPO), among other methods. SPPO is theoretically grounded, ensuring that the LLM can converge to the von Neumann winner (i.e., Nash equilibrium) under general, potentially intransitive preference, and empirically validated through extensive evaluations on multiple datasets.
 
-Paper Authors: [Yue Wu](https://yuewu.us/)\*, [Zhiqing Sun](https://www.cs.cmu.edu/~zhiqings/)\*, [Huizhuo Yuan](https://scholar.google.com/citations?user=8foZzX4AAAAJ)\*, [Kaixuan Ji](https://scholar.google.com/citations?user=FOoKDukAAAAJ), [Yiming Yang](https://www.cs.cmu.edu/~yiming/), [Quanquan Gu](https://web.cs.ucla.edu/~qgu/)
+Paper Authors: [Yue Wu](https://yuewu.us/)\*, [Zhiqing Sun](https://www.cs.cmu.edu/~zhiqings/)\*, [Huizhuo Yuan](https://scholar.google.com/citations?user=ANONYMOUS)\*, [Kaixuan Ji](https://scholar.google.com/citations?user=ANONYMOUS), [Yiming Yang](https://www.cs.cmu.edu/~yiming/), [Quanquan Gu](https://web.cs.ucla.edu/~qgu/)
 
-verl Implementation Authors: [Yuhao Yang](https://github.com/yhyang201), [Chenyang Zhao](https://github.com/zhaochenyang20)
+verl Implementation Authors: Anonymous Contributors
 
-[[Webpage](https://uclaml.github.io/SPPO/)] [[Huggingface](https://huggingface.co/papers/2405.00675)] [[Paper](https://arxiv.org/abs/2405.00675)][[Original Implementation](https://github.com/uclaml/SPPO)]
+[[Webpage](https://anonymous-contributor.github.io/)] [[Huggingface](https://huggingface.co/papers/2405.00675)] [[Paper](https://arxiv.org/abs/2405.00675)][[Original Implementation](https://github.com/uclaml/SPPO)]
 
 ## Reproduce the Experiment
 
@@ -41,12 +41,12 @@ python3 -m uv pip install flash-attn --no-build-isolation --no-deps
 We sincerely thank the contribution and guidance from:
 
 - [Yue Wu](https://yuewu.us/)
-- [Chendong Wang](https://cdwang96.github.io/)
+- [Chendong Wang](https://anonymous-contributor.github.io/)
 - [Yifan Zhang](https://github.com/yifanzhang-pro)
-- [Yongan Xiang](https://github.com/BearBiscuit05)
-- [Junrong Lin](https://github.com/ocss884)
+- [Yongan Xiang](https://github.com/anonymous-contributor)
+- [Junrong Lin](https://github.com/anonymous-contributor)
 - [Yuxuan Tong](https://github.com/tongyx361)
-- [Guangming Shen](https://github.com/PeterSH6)
+- [Guangming Shen](https://github.com/anonymous-contributor)
 - [Biao He](https://www.linkedin.com/in/biao-he/)
-- [Qingquan Song](https://qingquansong.github.io/)
+- [Qingquan Song](https://anonymous-contributor.github.io/)
 - [Quanquan Gu](https://web.cs.ucla.edu/~qgu/)

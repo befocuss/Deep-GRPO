@@ -6,7 +6,7 @@ Last updated: 06/02/2025.
 
 .. _vermouth: https://github.com/vermouth1992
 
-Author: `Chi Zhang <https://github.com/vermouth1992>`_
+Author: Anonymous Contributors
 
 verl is an open source implementation of the paper `HybridFlow <https://arxiv.org/abs/2409.19256v2>`_ [1]_. In this section, we will introduce the basic concepts of HybridFlow, the motivation and how to program with verl APIs.
 
@@ -30,7 +30,7 @@ RL as a dataflow problem
 Reinforcement learning (RL) training can also be represented as a dataflow. Below is the dataflow graph that represents the PPO algorithm used in RLHF [3]_:
 
 .. image:: https://picx.zhimg.com/70/v2-cb8ab5ee946a105aab6a563e92682ffa_1440w.avis?source=172ae18b&biz_tag=Post
-  :alt: PPO dataflow graph, credit to Zhihu 低级炼丹师
+  :alt: PPO dataflow graph
 
 However, the dataflow of RL has fundamental differences compared with dataflow of neural network training as follows:
 
@@ -262,5 +262,5 @@ Important code files in the repository are organized as below:
 
 .. [1] HybridFlow: A Flexible and Efficient RLHF Framework: https://arxiv.org/abs/2409.19256v2
 .. [2] Data flow graph credit to CS231n 2024 lecture 4: https://cs231n.stanford.edu/slides/2024/lecture_4.pdf
-.. [3] PPO dataflow graph credit to 低级炼丹师 from Zhihu​: https://zhuanlan.zhihu.com/p/635757674
+.. [3] PPO dataflow graph reference: https://zhuanlan.zhihu.com/p/635757674
 .. [4] RLFlow

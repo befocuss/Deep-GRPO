@@ -111,7 +111,7 @@ def get_adv_estimator_fn(name_or_enum):
 class AdvantageEstimator(str, Enum):
     """Using an enumeration class to avoid spelling errors in adv_estimator.
 
-    Note(haibin.lin): this enum class is immutable after creation. Extending this
+    Note: this enum class is immutable after creation. Extending this
     enum for new estimators may not be necessary since users can always just call
     `verl.trainer.ppo.core_algos.register` with string name for a custom advantage
     estimator instead.

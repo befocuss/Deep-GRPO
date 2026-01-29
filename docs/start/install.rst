@@ -26,7 +26,7 @@ For users who pursue better scalability, we recommend using **Megatron-LM** back
 
 For inference, vllm 0.8.3 and later versions have been tested for stability. We recommend turning on env var `VLLM_USE_V1=1` for optimal performance.
 
-For SGLang, refer to the :doc:`SGLang Backend<../workers/sglang_worker>` for detailed installation and usage instructions. SGLang rollout is under extensive development and offers many advanced features and optimizations. We encourage users to report any issues or provide feedback via the `SGLang Issue Tracker <https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/issues/106>`_.
+For SGLang, refer to the :doc:`SGLang Backend<../workers/sglang_worker>` for detailed installation and usage instructions. SGLang rollout is under extensive development and offers many advanced features and optimizations. We encourage users to report any issues or provide feedback via the `SGLang Issue Tracker <https://github.com/anonymous/ml-tutorial/issues/106>`_.
 
 For huggingface TGI integration, it is usually used for debugging and single GPU exploration.
 
@@ -256,7 +256,7 @@ Install with AMD GPUs - ROCM kernel support
 ------------------------------------------------------------------
 
 When you run on AMD GPUs (MI300) with ROCM platform, you cannot use the previous quickstart to run verl. You should follow the following steps to build a docker and run it. 
-If you encounter any issues in using AMD GPUs running verl, feel free to contact me - `Yusheng Su <https://yushengsu-thu.github.io/>`_.
+If you encounter any issues in using AMD GPUs running verl, feel free to contact me - `Yusheng Su <https://anonymous-contributor.github.io/>`_.
 
 Find the docker for AMD ROCm: `docker/Dockerfile.rocm <https://github.com/anonymous/anonymous-repo/blob/main/docker/Dockerfile.rocm>`_
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

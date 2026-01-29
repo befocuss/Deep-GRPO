@@ -1,11 +1,24 @@
+# Copyright 2024 Anonymous Authors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 import re
 import json
 import logging
 import os
 
-from recipe.spo.protocol import RewardInfo
-from recipe.spo.utils import call_teacher_with_retry
-from recipe.spo.prompts.dsbench import ACCURACY_EVALUATE_PROMPT
+from recipe.Deep_GRPO.protocol import RewardInfo
+from recipe.Deep_GRPO.utils import call_teacher_with_retry
+from recipe.Deep_GRPO.prompts.dsbench import ACCURACY_EVALUATE_PROMPT
 
 
 logger = logging.getLogger(__file__)

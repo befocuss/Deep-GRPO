@@ -15,7 +15,7 @@
 import re
 import string
 import random
-from recipe.spo.protocol import RewardInfo
+from recipe.Deep_GRPO.protocol import RewardInfo
 
 def extract_model_response(solution_string: str) -> str:
     start_delimiter = '<|im_start|>assistant'

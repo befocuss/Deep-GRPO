@@ -3,7 +3,7 @@ verl performance tuning for AMD (ROCm Kernel)
 
 Last updated: 04/25/2025.
 
-Author: `Yang Wang <https://github.com/YangWang92/>`_
+Author: Anonymous Contributors
 
 Patch vLLM to Enable Sleep Mode for AMD GPUs
 --------------------------------------------------------------
@@ -16,7 +16,7 @@ To enable vLLM's sleep mode, you can first use community patched code (from `thi
 
 .. code-block:: bash
 
-    git clone -b sleep_amd https://github.com/HollowMan6/vllm.git
+    git clone -b sleep_amd https://github.com/anonymous-contributor/vllm.git
     cd vllm
     sudo ln -sf /opt/rocm/lib/libamdhip64.so /usr/lib/libamdhip64.so
     VLLM_TARGET_DEVICE=rocm ROCM_PATH=/opt/rocm/ VLLM_GPU_LANG=HIP SETUPTOOLS_SCM_PRETEND_VERSION=0.8.4.dev python3 setup.py develop

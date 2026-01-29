@@ -119,7 +119,7 @@ class TaskRunner:
 
         from verl.workers.reward_manager import get_reward_manager_cls
 
-        # Note(haibin.lin): please make sure custom reward managers are imported and
+        # Note: please make sure custom reward managers are imported and
         # registered via `verl.workers.reward_manager.register`
         reward_manager_name = config.reward_model.get("reward_manager", "naive")
         reward_manager_cls = get_reward_manager_cls(reward_manager_name)

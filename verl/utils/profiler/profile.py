@@ -24,7 +24,7 @@ from .config import ProfilerConfig
 class Profiler:
     """A PyTorch profiler wrapper class for collecting performance metrics.
 
-    TODO(haibin.lin): this should implement the DistProfiler interface, and the config should be unified.
+    TODO: this should implement the DistProfiler interface, and the config should be unified.
 
     This profiler provides a convenient interface for profiling PyTorch operations,
     with support for:

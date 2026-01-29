@@ -10,11 +10,11 @@ Last updated: 05/31/2025.
 2.  **Two-Player Game Setup:** A game involving two players acted by a single LLM.
 3.  **Iterative Training:** The model progressively improves by refining its policy, with each iteration's model becoming the opponent for the next iteration.
 
-Paper Authors: [Zixiang Chen](https://github.com/uclaml/SPIN)\*, [Yihe Deng](https://github.com/uclaml/SPIN)\*, [Huizhuo Yuan](https://scholar.google.com/citations?user=8foZzX4AAAAJ)\*, [Kaixuan Ji](https://scholar.google.com/citations?user=FOoKDukAAAAJ), [Quanquan Gu](https://web.cs.ucla.edu/~qgu/)
+Paper Authors: [Zixiang Chen](https://github.com/uclaml/SPIN)\*, [Yihe Deng](https://github.com/uclaml/SPIN)\*, [Huizhuo Yuan](https://scholar.google.com/citations?user=ANONYMOUS)\*, [Kaixuan Ji](https://scholar.google.com/citations?user=ANONYMOUS), [Quanquan Gu](https://web.cs.ucla.edu/~qgu/)
 
-[[Webpage](https://uclaml.github.io/SPIN/)] [[Huggingface](https://huggingface.co/papers/2401.01335)] [[Paper](https://arxiv.org/abs/2401.01335)] [[Original Implementation](https://github.com/uclaml/SPIN)]
+[[Webpage](https://anonymous-contributor.github.io/)] [[Huggingface](https://huggingface.co/papers/2401.01335)] [[Paper](https://arxiv.org/abs/2401.01335)] [[Original Implementation](https://github.com/uclaml/SPIN)]
 
-verl Implementation Authors: [Chendong Wang](https://cdwang96.github.io/), [Chenyang Zhao](https://github.com/zhaochenyang20)
+verl Implementation Authors: Anonymous Contributors
 
 ---
 
@@ -167,13 +167,13 @@ The following steps outline how to set up the environment and run the SPIN recip
 We sincerely thank the contribution and guidance from the `verl` community and advisors, including (adapted from SPPO):
 
 * [Zixiang Chen](https://sites.google.com/view/zxchen)
-* [Yuhao Yang](https://github.com/yhyang201)
+* [Yuhao Yang](https://github.com/anonymous-contributor)
 * [Yifan Zhang](https://github.com/yifanzhang-pro)
-* [Yongan Xiang](https://github.com/BearBiscuit05)
-* [Junrong Lin](https://github.com/ocss884)
+* [Yongan Xiang](https://github.com/anonymous-contributor)
+* [Junrong Lin](https://github.com/anonymous-contributor)
 * [Yuxuan Tong](https://github.com/tongyx361)
-* [Guangming Shen](https://github.com/PeterSH6)
+* [Guangming Shen](https://github.com/anonymous-contributor)
 * [Biao He](https://www.linkedin.com/in/biao-he/)
-* [Qingquan Song](https://qingquansong.github.io/)
-* [Chenyang Zhao](https://zhaochenyang20.github.io/Chayenne/)
+* [Qingquan Song](https://anonymous-contributor.github.io/)
+* [Chenyang Zhao](https://anonymous-contributor.github.io/)
 * [Quanquan Gu](https://web.cs.ucla.edu/~qgu/)

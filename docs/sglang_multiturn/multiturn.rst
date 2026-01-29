@@ -310,7 +310,7 @@ GSM8K Multi-turn Training Performance
 
 See the training performance of multi-turn rollout on the GSM8K task HERE_.
 
-.. _HERE: https://wandb.ai/zhaochenyang20/gsm8k_async_rl/runs/1ro1r7om?nw=nwuserzhaochenyang20
+.. _HERE: https://wandb.ai/anonymous-user/gsm8k_async_rl/runs/1ro1r7om?nw=nwuseranonymous
 
 .. _GSM8KTool_example_configuration: https://github.com/anonymous/anonymous-repo/blob/main/examples/sglang_multiturn/config/tool_config/gsm8k_tool_config.yaml
 
@@ -340,4 +340,4 @@ Search Tool Integration
 
 Code Walkthrough
 ~~~~~~~~~~~~~~~~~~~~~~~
-If you want to learn more in depth about the code execution flow, please read https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/tree/main/rlhf/verl/multi-turn/code-walk-through
+If you want to learn more in depth about the code execution flow, please read https://github.com/anonymous/ml-tutorial/tree/main/rlhf/verl/multi-turn/code-walk-through

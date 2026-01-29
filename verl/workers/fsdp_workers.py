@@ -152,7 +152,7 @@ class ActorRolloutRefWorker(Worker, DistProfilerExtension):
         self._is_ref = self.role in ["ref", "actor_rollout_ref"]
 
         profiler_config: Optional[ProfilerConfig] = None
-        # TODO(haibin.lin):
+        # TODO:
         # As of now the type of config is DictConfig, if we assign config.profiler with ProfilerConfig,
         # it will actually convert the ProfilerConfig dataclass back to a DictConfig.
         # We can still use ProfilerConfig for testing purpose (tests/utils/test_nvtx_profile.py)

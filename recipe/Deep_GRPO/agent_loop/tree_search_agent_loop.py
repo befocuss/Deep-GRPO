@@ -1,3 +1,16 @@
+# Copyright 2024 Anonymous Authors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 from abc import abstractmethod
 from typing import Any, Dict, List, Union, Tuple, Optional
 
@@ -14,11 +27,11 @@ from verl.experimental.agent_loop.agent_loop import AgentLoopBase
 from verl.utils.profiler import simple_timer
 from verl.utils.rollout_trace import rollout_trace_op
 
-from recipe.spo.protocol import Node, FINISH_REASON, TSTrainAgentLoopOutput, TSValAgentLoopOutput, HardFailureSeed
-from recipe.spo.reward.reward_manager import score_node
-from recipe.spo.utils import call_teacher_with_retry
-from recipe.spo.prompts.tree_search import TEACHER_SELECTION_PROMPT_TEMPLATE
-from recipe.spo.branching_strategy import RandomBranchingStrategy, UtilitySamplingStrategy, BranchingSelection, BranchingFeedback
+from recipe.Deep_GRPO.protocol import Node, FINISH_REASON, TSTrainAgentLoopOutput, TSValAgentLoopOutput, HardFailureSeed
+from recipe.Deep_GRPO.reward.reward_manager import score_node
+from recipe.Deep_GRPO.utils import call_teacher_with_retry
+from recipe.Deep_GRPO.prompts.tree_search import TEACHER_SELECTION_PROMPT_TEMPLATE
+from recipe.Deep_GRPO.branching_strategy import RandomBranchingStrategy, UtilitySamplingStrategy, BranchingSelection, BranchingFeedback
 
 logger = logging.getLogger(__file__)
 logger.setLevel(os.getenv("VERL_LOGGING_LEVEL", "WARN"))

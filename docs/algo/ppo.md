@@ -101,5 +101,5 @@ Reference performance with verl v0.2:
 
 | Model                          | Method          | Score | Link                                                                                           |
 |-------------------------------|------------------|-------|------------------------------------------------------------------------------------------------|
-| Qwen/Qwen2.5-0.5B-Instruct     | pretrained model | 36.4  | [Qwen Blog](https://qwenlm.github.io/blog/qwen2.5-llm/)                                        |
+| Qwen/Qwen2.5-0.5B-Instruct     | pretrained model | 36.4  | [Qwen Blog](https://anonymous-contributor.github.io/.5-llm/)                                        |
 | Qwen/Qwen2.5-0.5B-Instruct     | PPO              | 56.7  | [PPO Command and Logs](https://github.com/anonymous-user/anonymous-repo-data/blob/experiments/gsm8k/Qwen2.5-0.5B-bsz256_2-prompt1024-resp512-0.567.log) |

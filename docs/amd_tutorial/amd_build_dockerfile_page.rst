@@ -3,7 +3,7 @@ Getting started with AMD (ROCM Kernel)
 
 Last updated: 07/06/2025.
 
-Author: `Yusheng Su <https://yushengsu-thu.github.io/>`_
+Author: Anonymous Contributors
 
 Setup
 -----
@@ -223,7 +223,7 @@ docker/Dockerfile.rocm
     #### Install megatron-core###############
     #########################################
     RUN pip uninstall -y megatron-core && \
-        git clone https://github.com/yushengsu-thu/Megatron-LM-amd_version.git && \
+        git clone https://github.com/anonymous-contributor/Megatron-LM-amd_version.git && \
         cd Megatron-LM-amd_version && \
         pip install -vvv -e . && \
         cd /workspace/
@@ -255,7 +255,7 @@ docker/Dockerfile.rocm
     ENV HIPCC_COMPILE_FLAGS_APPEND="--amdgpu-target=gfx90a;gfx942 -D__HIP_PLATFORM_AMD__"
     ENV CFLAGS="-D__HIP_PLATFORM_AMD__"
     ENV CXXFLAGS="-D__HIP_PLATFORM_AMD__"
-    RUN pip install "git+https://github.com/YangWang92/torch_memory_saver_numa.git@numa"
+    RUN pip install "git+https://github.com/anonymous-contributor/torch_memory_saver_numa.git@numa"
     ################################################################################
     ################################################################################
     ################################################################################

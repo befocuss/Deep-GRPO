@@ -78,7 +78,7 @@ def hf_processor(name_or_path, **kwargs):
         processor = AutoProcessor.from_pretrained(name_or_path, **kwargs)
     except Exception as e:
         processor = None
-        # TODO(haibin.lin): try-catch should be removed after adding transformer version req to setup.py to avoid
+        # TODO: try-catch should be removed after adding transformer version req to setup.py to avoid
         # silent failure
         warnings.warn(f"Failed to create processor: {e}. This may affect multimodal processing", stacklevel=1)
     # Avoid load tokenizer, see:

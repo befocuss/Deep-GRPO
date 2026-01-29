@@ -97,7 +97,7 @@ If you find this paper or repo helpful, please cite us.
 ```bibtex
 @article{cui2025entropy,
   title={The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models},
-  author={Cui, Ganqu and Zhang, Yuchen and Chen, Jiacheng and Yuan, Lifan and Wang, Zhi and Zuo, Yuxin and Li, Haozhan and Fan, Yuchen and Chen, Huayu and Chen, Weize and others},
+  author={Anonymous Authors},
   journal={arXiv preprint arXiv:2505.22617},
   year={2025}
 }
@@ -108,8 +108,8 @@ We implement our reinforcement learning algorithm extending from [verl](https://
 ## 📬 Contact
 
 For questions, discussion, or collaboration opportunities, feel free to contact:
-- Ganqu Cui: author@anonymous.org
-- Yuchen Zhang: author@anonymous.org
-- Jiacheng Chen: author@anonymous.org
-- Ning Ding: author@anonymous.org
+- Anonymous Contributor: author@anonymous.org
+- Anonymous Contributor: author@anonymous.org
+- Anonymous Contributor: author@anonymous.org
+- Anonymous Contributor: author@anonymous.org
 

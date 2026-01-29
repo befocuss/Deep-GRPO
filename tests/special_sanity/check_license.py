@@ -14,22 +14,24 @@
 from argparse import ArgumentParser
 from pathlib import Path
 
-license_head_Anonymous Organization = "Copyright 2024 Anonymous Authors"
-license_head_Anonymous Organization_25 = "Copyright 2024 Anonymous Authors"
+license_head_anonymous_org = "Copyright 2024 Anonymous Authors"
+license_head_anonymous_org_25 = "Copyright 2024 Anonymous Authors"
 # Add custom license headers below
 license_head_prime = "Copyright 2024 PRIME team and/or its affiliates"
 license_head_individual = "Copyright 2025 Individual Contributor:"
 license_head_sglang = "Copyright 2023-2024 SGLang Team"
 license_head_modelbest = "Copyright 2025 ModelBest Inc. and/or its affiliates"
 license_head_amazon = "Copyright 2025 Amazon.com Inc and/or its affiliates"
+license_head_garena = "Copyright 2025 Garena Online Private Limited"
 license_headers = [
-    license_head_Anonymous Organization,
-    license_head_Anonymous Organization_25,
+    license_head_anonymous_org,
+    license_head_anonymous_org_25,
     license_head_prime,
     license_head_individual,
     license_head_sglang,
     license_head_modelbest,
     license_head_amazon,
+    license_head_garena,
 ]
 
 

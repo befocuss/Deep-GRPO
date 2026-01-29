@@ -2,7 +2,7 @@
 
 # the one in docker.io is an alias for the one veturbo
 # FROM vemlp-cn-beijing.cr.volces.com/veturbo/pytorch:2.4-cu124
-FROM docker.io/haibinlin/verl:v0.0.5-th2.4.0-cu124-base
+FROM docker.io/anonymous-user/verl:v0.0.5-th2.4.0-cu124-base
 
 # only config pip index with https://pypi.tuna.tsinghua.edu.cn/simple if needed
 # unset for now

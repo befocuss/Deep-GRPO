@@ -1,30 +1,43 @@
+# Copyright 2024 Anonymous Authors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 from typing import List
 
 import asyncio
 
-from recipe.spo.reward import dabench
-from recipe.spo.reward import data_analysis
-from recipe.spo.reward import dsbench_data_analysis
-from recipe.spo.reward import dsbench_data_modeling
-from recipe.spo.reward import gsm8k
-from recipe.spo.reward import math
-from recipe.spo.reward import math_original
-from recipe.spo.reward import aime24
-from recipe.spo.reward import amc
-from recipe.spo.reward import minerva
-from recipe.spo.reward import olympiadbench
-from recipe.spo.reward import deepscaler
-from recipe.spo.reward import ds1000
-from recipe.spo.reward import wikitq
-from recipe.spo.reward import hybridqa
-from recipe.spo.reward import multihiertt
-from recipe.spo.reward import ottqa
-from recipe.spo.reward import finqa
-from recipe.spo.reward import project-data
-from recipe.spo.reward import dabstep_research
-from recipe.spo.reward import dabstep
-from recipe.spo.reward import qa_em_format
-from recipe.spo.protocol import RewardInfo, FINISH_REASON, Node
+from recipe.Deep_GRPO.reward import dabench
+from recipe.Deep_GRPO.reward import data_analysis
+from recipe.Deep_GRPO.reward import dsbench_data_analysis
+from recipe.Deep_GRPO.reward import dsbench_data_modeling
+from recipe.Deep_GRPO.reward import gsm8k
+from recipe.Deep_GRPO.reward import math
+from recipe.Deep_GRPO.reward import math_original
+from recipe.Deep_GRPO.reward import aime24
+from recipe.Deep_GRPO.reward import amc
+from recipe.Deep_GRPO.reward import minerva
+from recipe.Deep_GRPO.reward import olympiadbench
+from recipe.Deep_GRPO.reward import deepscaler
+from recipe.Deep_GRPO.reward import ds1000
+from recipe.Deep_GRPO.reward import wikitq
+from recipe.Deep_GRPO.reward import hybridqa
+from recipe.Deep_GRPO.reward import multihiertt
+from recipe.Deep_GRPO.reward import ottqa
+from recipe.Deep_GRPO.reward import finqa
+from recipe.Deep_GRPO.reward import project-data
+from recipe.Deep_GRPO.reward import dabstep_research
+from recipe.Deep_GRPO.reward import dabstep
+from recipe.Deep_GRPO.reward import qa_em_format
+from recipe.Deep_GRPO.protocol import RewardInfo, FINISH_REASON, Node
 
 
 async def score_node(node: Node, tokenizer) -> RewardInfo:

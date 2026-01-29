@@ -6,7 +6,7 @@ Last updated: 04/23/2025
 
 .. _wuxibin89: https://github.com/wuxibin89
 
-Author: `Ao Shen <https://aoshen524.github.io/>`_.
+Author: Anonymous Contributors
 
 How to debug?
 ---------------------

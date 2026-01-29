@@ -16,7 +16,7 @@ import os
 import re
 import logging
 
-from recipe.spo.protocol import RewardInfo
+from recipe.Deep_GRPO.protocol import RewardInfo
 
 
 logger = logging.getLogger(__file__)

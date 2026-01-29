@@ -13,7 +13,7 @@ defaults:
   # load the reference default config, then apply the fields in the current yaml
   - _self_
 
-# TODO(haibin.lin): switch to fsdp2
+# TODO: switch to fsdp2
 strategy: fsdp
 
 # Gradient clipping for actor updates, specific to the strategy.
