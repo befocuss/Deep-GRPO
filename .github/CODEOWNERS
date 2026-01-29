@@ -1,0 +1,18 @@
+/docs @anonymous-author-1 @anonymous-author-2 @anonymous-author-3
+/docs/amd_tutorial @anonymous-author-4
+/docs/slang_multiturn @anonymous-author-5 @anonymous-author-6
+
+/recipe/dapo @anonymous-author-7 @anonymous-author-8
+/recipe/spin @anonymous-author-5
+/recipe/sppo @anonymous-author-5
+
+/third_party/sglang @anonymous-author-5 @anonymous-author-6
+/third_party/vllm @anonymous-author-8 @anonymous-author-9
+/verl/single_controller @anonymous-author-10 @anonymous-author-9
+/verl/trainer @anonymous-author-1 @anonymous-author-2 @anonymous-author-7 @anonymous-author-8
+/verl/workers/rollout/vllm_rollout @anonymous-author-9 @anonymous-author-8 @anonymous-author-11
+/verl/workers/rollout/sglang_rollout @anonymous-author-5 @anonymous-author-6 @anonymous-author-11
+
+/tests/single_controller @anonymous-author-10 @anonymous-author-9
+/tests/trainer @anonymous-author-1 @anonymous-author-2 @anonymous-author-7 @anonymous-author-8
+/tests/workers/rollout/vllm_rollout @anonymous-author-9 @anonymous-author-8 @anonymous-author-11

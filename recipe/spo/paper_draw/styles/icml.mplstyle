@@ -1,0 +1,15 @@
+text.usetex        : True
+font.family        : sans-serif
+text.latex.preamble: \usepackage{amsmath}
+text.color         : black
+
+axes.edgecolor     : gray
+axes.labelsize     : 12
+axes.titlesize     : 12
+xtick.labelsize    : 12
+ytick.labelsize    : 12
+
+legend.edgecolor   : gray
+legend.frameon     : True
+legend.facecolor   : white
+legend.fontsize    : 10
