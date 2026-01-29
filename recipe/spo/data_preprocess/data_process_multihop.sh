@@ -1,4 +1,4 @@
-LOCAL_DIR=/root/data/hf-datasets/hotpotqa
+LOCAL_DIR=/data/hf-datasets/hotpotqa
 
 ## process multiple dataset search format train file
 DATA=hotpotqa

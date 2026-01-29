@@ -81,7 +81,7 @@ def generate_sample(sample_idx, text, question, answer, workspace):
         "prompt": prompt,
         "ability": DATA_SOURCE,
         "reward_model": {"style": "rule", "ground_truth": normalize_answer(answer)},
-        "agent_name": "deep_analyze_agent_loop",
+        "agent_name": "data_analysis_agent_loop",
         "extra_info": {
             "index": sample_idx,
             "question": question,

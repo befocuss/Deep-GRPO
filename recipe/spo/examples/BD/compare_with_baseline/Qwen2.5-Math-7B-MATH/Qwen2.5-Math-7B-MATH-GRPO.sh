@@ -4,9 +4,9 @@ export VLLM_USE_V1=1
 export HYDRA_FULL_ERROR=1
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
-MODEL=/root/data/hf-models/Qwen2.5-Math-7B
-DATA_DIR=/root/data/hf-datasets
-OUTPUT_DIR=/root/data
+MODEL=/data/hf-models/Qwen2.5-Math-7B
+DATA_DIR=/data/hf-datasets
+OUTPUT_DIR=/data
 RUN_NAME=Qwen2.5-Math-7B-MATH-GRPO-n8-01141920
 export WANDB_DIR=$OUTPUT_DIR/wandb/$RUN_NAME
 
@@ -14,7 +14,7 @@ export OPENAI_API_KEY=MY_SECRET
 export OPENAI_BASE_URL=http://placeholder-api-server:8000/v1
 export TEACHER_MODEL_NAME=Qwen3-235B-A22B-Instruct-2507-AWQ
 
-export DOMAIN_API_DOCS_BASE_DIR=/home/user/data/download/ciecc/algorithm_api_docs
+export DOMAIN_API_DOCS_BASE_DIR=/home/user/data/download/project-data/algorithm_api_docs
 export RAY_local_fs_capacity_threshold=1
 
 python3 -m  verl.trainer.main_ppo \

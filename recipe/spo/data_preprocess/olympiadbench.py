@@ -2,7 +2,7 @@ import os
 
 import datasets
 
-SAVE_PATH = "/root/data/hf-datasets/olympiad_bench"
+SAVE_PATH = "/data/hf-datasets/olympiad_bench"
 TEST_DATASET_PATH = "/root/paddlejob/workspace/understand-r1-zero/datasets/evaluation_suite/olympiad_bench"
 
 

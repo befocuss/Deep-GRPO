@@ -14,7 +14,7 @@ export OPENAI_API_KEY=MY_SECRET
 export OPENAI_BASE_URL=http://placeholder-api-server:8000/v1
 export TEACHER_MODEL_NAME=Qwen3-235B-A22B-Instruct-2507-AWQ
 
-export DOMAIN_API_DOCS_BASE_DIR=/home/user/data/download/ciecc/algorithm_api_docs
+export DOMAIN_API_DOCS_BASE_DIR=/home/user/data/download/project-data/algorithm_api_docs
 export RAY_local_fs_capacity_threshold=1
 
 python3 -m  verl.trainer.main_ppo \

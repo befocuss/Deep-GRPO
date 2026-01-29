@@ -9,7 +9,7 @@ import asyncio
 
 from recipe.spo.protocol import RewardInfo
 from recipe.spo.utils import call_teacher_with_retry
-from recipe.spo.prompts.deep_analyze import REPORT_SOUNDNESS_EVALUATE_PROMPT, REPORT_QUALITY_EVALUATE_PROMPT, ANSWER_CORRECTNESS_EVALUATE_PROMPT, RESPONSE_QUALITY_PROMPT
+from recipe.spo.prompts.data_analysis import REPORT_SOUNDNESS_EVALUATE_PROMPT, REPORT_QUALITY_EVALUATE_PROMPT, ANSWER_CORRECTNESS_EVALUATE_PROMPT, RESPONSE_QUALITY_PROMPT
 
 
 logger = logging.getLogger(__file__)

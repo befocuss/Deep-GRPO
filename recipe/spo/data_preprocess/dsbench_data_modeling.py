@@ -37,7 +37,7 @@ def generate_sample(sample_idx,
         "data_source": DATA_SOURCE,
         "prompt": prompt,
         "ability": DATA_SOURCE,
-        "agent_name": "deep_analyze_agent_loop",
+        "agent_name": "data_analysis_agent_loop",
         "reward_model": {
             "style": "rule",
             "expected_file": expected_file,

@@ -10,17 +10,17 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 MODEL=/data/hf-models/Qwen2.5-Math-7B
 DATA_DIR=/data/hf-datasets
 OUTPUT_DIR=/data
-RUN_NAME=DeepAnalyze-CRGRPO-1210
+RUN_NAME=DataAnalysis-CRGRPO-1210
 export WANDB_DIR=$OUTPUT_DIR/wandb/$RUN_NAME
 
 export OPENAI_API_KEY=MY_SECRET
 export OPENAI_BASE_URL=http://placeholder-api-server:8000/v1
 export TEACHER_MODEL_NAME=Qwen3-235B-A22B-Instruct-2507-AWQ
-export DOMAIN_API_DOCS_BASE_DIR=/data/download/ciecc/algorithm_api_docs
+export DOMAIN_API_DOCS_BASE_DIR=/data/download/project-data/algorithm_api_docs
 
 /workspace/miniconda3/bin/conda run -p /workspace/miniconda3/envs/verl --no-capture-output python3 -m  verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
-    data.train_files="[$DATA_DIR/deep_analyze/research_task.parquet,$DATA_DIR/deep_analyze/data_task.parquet,$DATA_DIR/deep_analyze/qa_task.parquet]" \
+    data.train_files="[$DATA_DIR/data_analysis/research_task.parquet,$DATA_DIR/data_analysis/data_task.parquet,$DATA_DIR/data_analysis/qa_task.parquet]" \
     data.val_files="[$DATA_DIR/dsbench/data_analysis.parquet,$DATA_DIR/dsbench/data_modeling.parquet,$DATA_DIR/ds1000/full.parquet,$DATA_DIR/wikitq/test.parquet]" \
     data.train_batch_size=256 \
     data.max_prompt_length=16384 \
@@ -60,7 +60,7 @@ export DOMAIN_API_DOCS_BASE_DIR=/data/download/ciecc/algorithm_api_docs
     trainer.whiten_advantages=False \
     trainer.critic_warmup=0 \
     trainer.logger=['console','wandb'] \
-    trainer.project_name='DeepAnalyze' \
+    trainer.project_name='DataAnalysis' \
     trainer.experiment_name=$RUN_NAME \
     trainer.n_gpus_per_node=8 \
     trainer.nnodes=1 \

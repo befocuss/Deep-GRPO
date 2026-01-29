@@ -2,7 +2,7 @@ import os
 
 import datasets
 
-SAVE_PATH = "/root/data/hf-datasets/amc"
+SAVE_PATH = "/data/hf-datasets/amc"
 TEST_DATASET_PATH = "/root/paddlejob/workspace/understand-r1-zero/datasets/evaluation_suite/amc"
 
 

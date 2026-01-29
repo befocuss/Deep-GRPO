@@ -399,15 +399,15 @@ class AgentLoopWorker:
         # TODO: add tool agent registrary
         from verl.experimental.agent_loop.single_turn_agent_loop import SingleTurnAgentLoop
         from verl.experimental.agent_loop.tool_agent_loop import ToolAgentLoop
-        from recipe.spo.agent_loop.deep_analyze_agent_loop import DeepAnalyzeAgentLoop
+        from recipe.spo.agent_loop.data_analysis_agent_loop import DataAnalysisAgentLoop
         from recipe.spo.agent_loop.search_agent_loop import SearchAgentLoop
 
         if agent_name == "single_turn_agent":
             return SingleTurnAgentLoop
         elif agent_name == "tool_agent":
             return ToolAgentLoop
-        elif agent_name == "deep_analyze_agent_loop":
-            return DeepAnalyzeAgentLoop
+        elif agent_name == "data_analysis_agent_loop":
+            return DataAnalysisAgentLoop
         elif agent_name == "search_agent":
             return SearchAgentLoop
         elif agent_name == "reasoning_agent_loop":

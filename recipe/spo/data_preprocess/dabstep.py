@@ -93,7 +93,7 @@ def process_fn(
             "style": "rule",
             "ground_truth": "", # need to submit to the leaderboard to get the score
         },
-        "agent_name": "deep_analyze_agent_loop",
+        "agent_name": "data_analysis_agent_loop",
         "extra_info": {
             "instruction": question,
             "task_id": task_id,

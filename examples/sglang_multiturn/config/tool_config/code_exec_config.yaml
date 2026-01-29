@@ -6,7 +6,7 @@ tools:
       base_workdir: "/tmp/agent_code"
       timeout: 30
       python_exec: "/data/miniconda3/envs/verl/bin/python"
-      init_files_base_dir: "/data/InfiAgent/examples/DA-Agent/data/da-dev-tables"
+      init_files_base_dir: "/data/Agent-Framework/examples/Data-Agent/data/da-dev-tables"
       type: native
 
     tool_schema:

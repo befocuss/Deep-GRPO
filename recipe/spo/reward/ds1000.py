@@ -1,5 +1,5 @@
 # https://github.com/xlang-ai/DS-1000/blob/main/test_ds1000.py
-# https://github.com/ruc-datalab/DeepAnalyze/blob/main/playground/DS-1000/run_deepanalyze.py
+# https://github.com/ruc-datalab/DataAnalysis/blob/main/playground/DS-1000/run_DataAnalysis.py
 
 from typing import List
 

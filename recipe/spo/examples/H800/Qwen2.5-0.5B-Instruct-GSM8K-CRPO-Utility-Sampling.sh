@@ -15,7 +15,7 @@ export WANDB_DIR=$OUTPUT_DIR/wandb/$RUN_NAME
 export OPENAI_API_KEY=MY_SECRET
 export OPENAI_BASE_URL=http://placeholder-api-server:8000/v1
 export TEACHER_MODEL_NAME=Qwen3-235B-A22B-Instruct-2507-AWQ
-export DOMAIN_API_DOCS_BASE_DIR=/data/download/ciecc/algorithm_api_docs
+export DOMAIN_API_DOCS_BASE_DIR=/data/download/project-data/algorithm_api_docs
 
 export PYTHONUNBUFFERED=1
 

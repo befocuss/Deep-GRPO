@@ -8,8 +8,8 @@ def format_prompt(question, constraints, format, file_name):
     return prompt
 
 DATA_SOURCE = "DABench"
-DATA_PATH = "/data/InfiAgent/examples/DA-Agent/data"
-WORK_SPACE = "/data/InfiAgent/examples/DA-Agent/data/da-dev-tables"
+DATA_PATH = "/data/Agent-Framework/examples/Data-Agent/data"
+WORK_SPACE = "/data/Agent-Framework/examples/Data-Agent/data/da-dev-tables"
 SAVE_PATH = "/data/hf-datasets/dabench"
 
 with open(os.path.join(DATA_PATH, "da-dev-questions.jsonl"), "r", encoding="utf-8") as f:
@@ -47,7 +47,7 @@ def make_map_fn(split):
             ],
             "ability": "data_analysis",
             "reward_model": {"style": "rule", "ground_truth": label},
-            "agent_name": "deep_analyze_agent_loop",
+            "agent_name": "data_analysis_agent_loop",
             "extra_info": {
                 "split": split,
                 "index": id,

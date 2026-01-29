@@ -2,7 +2,7 @@ import os
 import datasets
 
 
-SAVE_PATH = "/root/data/hf-datasets/math"
+SAVE_PATH = "/data/hf-datasets/math"
 TRAIN_DATASET_PATH = "/root/paddlejob/workspace/understand-r1-zero/datasets/train/math_lvl3to5_8k"
 TEST_DATASET_PATH = "/root/paddlejob/workspace/understand-r1-zero/datasets/evaluation_suite/math"
 

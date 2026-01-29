@@ -6,7 +6,7 @@ from uuid import uuid4
 import regex as re
 
 from recipe.spo.code_executor import CodeExecutor
-from recipe.spo.ciecc_api_doc_retriever import retrieve_api_doc
+from recipe.spo.project-data_api_doc_retriever import retrieve_api_doc
 from recipe.spo.protocol import FINISH_REASON, Node, TSValAgentLoopOutput
 from recipe.spo.agent_loop.tree_search_agent_loop import TSAgentLoop
 
@@ -17,7 +17,7 @@ logger = logging.getLogger(__file__)
 logger.setLevel(os.getenv("VERL_LOGGING_LEVEL", "WARN"))
 
 
-class DeepAnalyzeAgentLoop(TSAgentLoop):
+class DataAnalysisAgentLoop(TSAgentLoop):
     def __init__(self, config, server_manager, tokenizer):
         super().__init__(config, server_manager, tokenizer)
 

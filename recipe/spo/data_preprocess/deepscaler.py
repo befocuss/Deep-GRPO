@@ -2,7 +2,7 @@ import os
 import datasets
 
 
-SAVE_PATH = "/root/data/hf-datasets/deepscaler"
+SAVE_PATH = "/data/hf-datasets/deepscaler"
 TRAIN_DATASET_PATH = "agentica-org/DeepScaleR-Preview-Dataset"
 
 

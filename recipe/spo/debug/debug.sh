@@ -7,7 +7,7 @@ export WANDB_MODE=offline
 export HYDRA_FULL_ERROR=1
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4
 
-MODEL=/data/hf-models/DeepAnalyze-Agent-S40
+MODEL=/data/hf-models/DataAnalysis-Agent-S40
 DATA_DIR=/data/hf-datasets
 OUTPUT_DIR=/data
 RUN_NAME=debug-12012341
@@ -16,11 +16,11 @@ export WANDB_DIR=$OUTPUT_DIR/wandb/$RUN_NAME
 export OPENAI_API_KEY=MY_SECRET
 export OPENAI_BASE_URL=http://placeholder-api-server:8000/v1
 export TEACHER_MODEL_NAME=Qwen3-235B-A22B-Instruct-2507-AWQ
-export DOMAIN_API_DOCS_BASE_DIR=/data/download/ciecc/algorithm_api_docs
+export DOMAIN_API_DOCS_BASE_DIR=/data/download/project-data/algorithm_api_docs
 
 /workspace/miniconda3/bin/conda run -p /workspace/miniconda3/envs/verl --no-capture-output python3 -m  verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
-    data.train_files="[$DATA_DIR/deep_analyze/research_task.parquet]" \
+    data.train_files="[$DATA_DIR/data_analysis/research_task.parquet]" \
     data.val_files="[$DATA_DIR/finqa/test.parquet]" \
     data.train_batch_size=16 \
     data.max_prompt_length=16384 \

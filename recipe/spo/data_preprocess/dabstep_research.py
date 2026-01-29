@@ -62,7 +62,7 @@ def process_fn(example: Dict[str, Any], context_files: str) -> Dict[str, Any]:
             "style": "rule",
             "ground_truth": example.get("checklist", ""),
         },
-        "agent_name": "deep_analyze_agent_loop",
+        "agent_name": "data_analysis_agent_loop",
         "extra_info": {
             "instruction": question,
             "task_id": task_id,

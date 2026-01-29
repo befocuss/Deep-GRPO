@@ -2,7 +2,7 @@ tools:
   - class_name: "verl.tools.jupyter_notebook_tool.NotebookTool"
     config:
       kernel_name: "python3"
-      init_files_dir: /home/gyr/InfiAgent/examples/DA-Agent/data/da-dev-tables
+      init_files_dir: /home/user/Agent-Framework/examples/Data-Agent/data/da-dev-tables
       type: native
     tool_schema:
       type: "function"

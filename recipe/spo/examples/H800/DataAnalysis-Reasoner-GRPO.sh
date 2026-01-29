@@ -7,7 +7,7 @@ export WANDB_MODE=offline
 export HYDRA_FULL_ERROR=1
 # export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
-MODEL=/data/hf-models/DeepAnalyze-8B
+MODEL=/data/hf-models/DataAnalysis-8B
 DATA_DIR=/data/hf-datasets
 OUTPUT_DIR=/data
 RUN_NAME=DataAnalysis-Reasoner-GRPO-1222
@@ -16,7 +16,7 @@ export WANDB_DIR=$OUTPUT_DIR/wandb/$RUN_NAME
 export OPENAI_API_KEY=MY_SECRET
 export OPENAI_BASE_URL=http://placeholder-api-server:8000/v1
 export TEACHER_MODEL_NAME=Qwen3-235B-A22B-Instruct-2507-AWQ
-export DOMAIN_API_DOCS_BASE_DIR=/data/download/ciecc/algorithm_api_docs
+export DOMAIN_API_DOCS_BASE_DIR=/data/download/project-data/algorithm_api_docs
 
 /workspace/miniconda3/bin/conda run -p /workspace/miniconda3/envs/verl --no-capture-output python3 -m  verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
@@ -59,7 +59,7 @@ export DOMAIN_API_DOCS_BASE_DIR=/data/download/ciecc/algorithm_api_docs
     trainer.whiten_advantages=False \
     trainer.critic_warmup=0 \
     trainer.logger=['console','wandb'] \
-    trainer.project_name='DeepAnalyze' \
+    trainer.project_name='DataAnalysis' \
     trainer.experiment_name=$RUN_NAME \
     trainer.n_gpus_per_node=4 \
     trainer.nnodes=1 \

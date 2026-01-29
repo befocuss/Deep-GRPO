@@ -28,7 +28,7 @@ async def evaluate_submission(chat_history_str: str,
                               gold_result: float) -> RewardInfo:
     
     # eval submission file, we have cleaned submission file before run val
-    # see recipe/spo/agent_loop/deep_analyze_agent_loop.py _run_val
+    # see recipe/spo/agent_loop/data_analysis_agent_loop.py _run_val
 
     async with semaphore:
         answer = extract_answer(chat_history_str)

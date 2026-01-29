@@ -3,7 +3,7 @@ from typing import List
 import asyncio
 
 from recipe.spo.reward import dabench
-from recipe.spo.reward import deep_analyze
+from recipe.spo.reward import data_analysis
 from recipe.spo.reward import dsbench_data_analysis
 from recipe.spo.reward import dsbench_data_modeling
 from recipe.spo.reward import gsm8k
@@ -20,7 +20,7 @@ from recipe.spo.reward import hybridqa
 from recipe.spo.reward import multihiertt
 from recipe.spo.reward import ottqa
 from recipe.spo.reward import finqa
-from recipe.spo.reward import ciecc
+from recipe.spo.reward import project-data
 from recipe.spo.reward import dabstep_research
 from recipe.spo.reward import dabstep
 from recipe.spo.reward import qa_em_format
@@ -42,19 +42,19 @@ async def score_node(node: Node, tokenizer) -> RewardInfo:
     data_source = data_instance["data_source"]
 
     if data_source == "datatask":
-        result = await deep_analyze.compute_datatask_reward(instruction=data_instance["extra_info"]["instruction"],
+        result = await data_analysis.compute_datatask_reward(instruction=data_instance["extra_info"]["instruction"],
                                                             chat_history_str=chat_history_str,
                                                             ground_truth=data_instance["reward_model"]["ground_truth"]
                                                             )
     
     elif data_source == "reasoning-table":
-        result = await deep_analyze.compute_tableqa_reward(instruction=data_instance["extra_info"]["instruction"],
+        result = await data_analysis.compute_tableqa_reward(instruction=data_instance["extra_info"]["instruction"],
                                                            chat_history_str=chat_history_str,
                                                            ground_truth=data_instance["reward_model"]["ground_truth"]
                                                           )
         
     elif data_source == "research":
-        result = await deep_analyze.compute_research_task_reward(instruction=data_instance["extra_info"]["instruction"],
+        result = await data_analysis.compute_research_task_reward(instruction=data_instance["extra_info"]["instruction"],
                                                                  chat_history_str=chat_history_str,
                                                                 )
         
@@ -138,8 +138,8 @@ async def score_node(node: Node, tokenizer) -> RewardInfo:
                                                               chat_history_str=chat_history_str,
                                                               ground_truth=data_instance["reward_model"]["ground_truth"]
                                                             )
-    # elif data_source == "ciecc_compare":
-    #     result = await ciecc.llm_as_judgement_accuracy(model_solution=text,
+    # elif data_source == "project-data_compare":
+    #     result = await project-data.llm_as_judgement_accuracy(model_solution=text,
     #                                                    ground_truth_answer=data_instance["reward_model"]["ground_truth"],
     #                                                    query=data_instance["extra_info"]["query"],
     #                                                    candidate_algorithms=data_instance["extra_info"]["candidate_algorithms"]

@@ -5,10 +5,10 @@ from typing import Dict, Any, List
 from datasets import Dataset
 
 
-RAW_JSON_PATH = "/data/download/ciecc/compare.json"
-WORKSPACE = "/data/download/ciecc/data"
-SAVE_PATH = "/data/hf-datasets/ciecc/compare"
-DATA_SOURCE_NAME = "ciecc_compare"
+RAW_JSON_PATH = "/data/download/project-data/compare.json"
+WORKSPACE = "/data/download/project-data/data"
+SAVE_PATH = "/data/hf-datasets/project-data/compare"
+DATA_SOURCE_NAME = "project-data_compare"
 
 SYSTEM_PROMPT = """
 你是一个面向政府与企业的数据分析与算法选型专家。
@@ -103,7 +103,7 @@ def build_single_verl_example(
                 "content": user_query,
             },
         ],
-        "ability": "ciecc_compare",
+        "ability": "project-data_compare",
         "reward_model": {
             "style": "rule",
             "ground_truth": judge_rubric,

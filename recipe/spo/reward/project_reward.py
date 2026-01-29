@@ -96,11 +96,11 @@ Remember to:
    - "analysis" (string)."""
 
 
-def check_ciecc_import(student_answer: str):
+def check_project_data_import(student_answer: str):
     code_blocks = re.findall(r'<Code>(.*?)</Code>', student_answer, re.DOTALL)
     
     for block in code_blocks:
-        if 'import ciecc' in block or 'from ciecc import' in block:
+        if 'import project_data' in block or 'from project_data import' in block:
             return True
     return False
 
@@ -116,7 +116,7 @@ async def llm_as_judgement_accuracy(model_solution: str,
                                     client: AsyncOpenAI, 
                                     model: str) -> RewardInfo:
 
-    import_reward = 0.5 if check_ciecc_import(student_answer=model_solution) else 0
+    import_reward = 0.5 if check_project_data_import(student_answer=model_solution) else 0
     retrieve_reward = 0.5 if check_for_result_tag(student_answer=model_solution) else 0
     
     candidate_algorithms_as_text = "\n".join(f"- {alg}" for alg in candidate_algorithms)

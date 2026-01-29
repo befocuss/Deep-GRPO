@@ -6,7 +6,7 @@ DATA_TASK_FILE = "/data/download/DataScience-Instruct-500K/RL/datatask.parquet"
 QA_TASK_FILE = "/data/download/DataScience-Instruct-500K/RL/qa.parquet"
 RESEARCH_TASK_FILE = "/data/download/DataScience-Instruct-500K/RL/reseach.parquet"
 WORKSPACE_ROOT_DIR = "/data/download/DataScience-Instruct-500K/RL/data"
-SAVE_PATH = "/data/hf-datasets/deep_analyze"
+SAVE_PATH = "/data/hf-datasets/data_analysis"
 
 data_task_dataset = load_dataset("parquet", data_files=DATA_TASK_FILE)["train"]
 qa_task_dataset = load_dataset("parquet", data_files=QA_TASK_FILE)["train"]
@@ -26,7 +26,7 @@ def process_fn(example, idx):
     ground_truth = reward_spec["ground_truth"]
     teacher_response = reward_spec["response"]
     if data_source == "datatask" or data_source == "research":
-       agent_name = "deep_analyze_agent_loop"
+       agent_name = "data_analysis_agent_loop"
     else:
         agent_name = "reasoning_agent_loop"
 
