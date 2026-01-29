@@ -1,6 +1,6 @@
-# Deep-GRPO
+# DEEP-GRPO
 
-Repository scripts for Deep-GRPO.
+Repository scripts for DEEP-GRPO.
 
 ## Quick Start
 
@@ -9,19 +9,19 @@ Repository scripts for Deep-GRPO.
 **Basic training:**
 ```bash
 cd recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/Qwen2.5-0.5B-Instruct-GSM8K
-bash Qwen2.5-0.5B-Instruct-GSM8K-Deep-GRPO.sh
+bash Qwen2.5-0.5B-Instruct-GSM8K-DEEP-GRPO.sh
 
 # GSM8K with Qwen2.5-0.5B
-bash recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/Qwen2.5-0.5B-Instruct-GSM8K/Qwen2.5-0.5B-Instruct-GSM8K-Deep-GRPO.sh
+bash recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/Qwen2.5-0.5B-Instruct-GSM8K/Qwen2.5-0.5B-Instruct-GSM8K-DEEP-GRPO.sh
 
 # MATH with Qwen2.5-Math-1.5B
-bash recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/Qwen2.5-Math-1.5B-MATH/Qwen2.5-Math-1.5B-MATH-Deep-GRPO.sh
+bash recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/Qwen2.5-Math-1.5B-MATH/Qwen2.5-Math-1.5B-MATH-DEEP-GRPO.sh
 
 # MATH with Qwen2.5-Math-7B
-bash recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/Qwen2.5-Math-7B-MATH/Qwen2.5-Math-7B-MATH-Deep-GRPO.sh
+bash recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/Qwen2.5-Math-7B-MATH/Qwen2.5-Math-7B-MATH-DEEP-GRPO.sh
 
 # DS-R1-Distill model
-bash recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/DS-R1-Distill-Qwen-1.5B/DS-R1-Distill-Qwen-1.5B-Deep-GRPO.sh
+bash recipe/Deep_GRPO/examples/Cluster/compare_with_baseline/DS-R1-Distill-Qwen-1.5B/DS-R1-Distill-Qwen-1.5B-DEEP-GRPO.sh
 ```
 
 ## Experiment Configurations
