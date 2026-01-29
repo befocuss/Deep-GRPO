@@ -8,7 +8,7 @@ This repository contains training scripts for Reinforcement Learning with Self-P
 recipe/spo/examples/
 ├── H800/                          # Scripts for H800 GPU configurations
 ├── A100/                          # Scripts for A100 GPU configurations
-└── BD/                            # Scripts for internal cluster configurations
+└── Cluster/                            # Scripts for cluster configurations
     ├── compare_with_baseline/     # Baseline comparison experiments
     ├── debug/                     # Debug configurations
     ├── different_lambda/          # Lambda parameter experiments
@@ -23,7 +23,7 @@ recipe/spo/examples/
 ### 1. Download Models and Datasets
 
 ```bash
-cd recipe/spo/examples/BD
+cd recipe/spo/examples/Cluster
 bash download.sh
 ```
 
@@ -47,35 +47,35 @@ bash Qwen2.5-0.5B-Instruct-GSM8K-CRPO.sh
 
 ### Baseline Comparison Scripts
 
-Located in `BD/compare_with_baseline/`, these compare CRPO vs GRPO on different tasks:
+Located in `Cluster/compare_with_baseline/`, these compare CRPO vs GRPO on different tasks:
 
 **GSM8K (Math):**
 ```bash
-cd recipe/spo/examples/BD/compare_with_baseline/Qwen2.5-0.5B-Instruct-GSM8K
+cd recipe/spo/examples/Cluster/compare_with_baseline/Qwen2.5-0.5B-Instruct-GSM8K
 bash Qwen2.5-0.5B-Instruct-GSM8K-CRPO.sh  # CRPO training
 bash Qwen2.5-0.5B-Instruct-GSM8K-GRPO.sh  # GRPO training
 ```
 
 **MATH Dataset:**
 ```bash
-cd recipe/spo/examples/BD/compare_with_baseline/Qwen2.5-Math-1.5B-MATH
+cd recipe/spo/examples/Cluster/compare_with_baseline/Qwen2.5-Math-1.5B-MATH
 bash Qwen2.5-Math-1.5B-MATH-CRPO.sh       # CRPO training
 bash Qwen2.5-Math-1.5B-MATH-GRPO.sh       # GRPO training
 ```
 
 **HotpotQA (Multi-hop QA):**
 ```bash
-cd recipe/spo/examples/BD/compare_with_baseline/Qwen2.5-3B-HotpotQA
+cd recipe/spo/examples/Cluster/compare_with_baseline/Qwen2.5-3B-HotpotQA
 bash Qwen2.5-3B-HotpotQA-CRPO.sh          # CRPO training
 bash Qwen2.5-3B-HotpotQA-GRPO.sh          # GRPO training
 ```
 
 ### Lambda Parameter Experiments
 
-Located in `BD/different_lambda/`, these test different branch chain loss weights:
+Located in `Cluster/different_lambda/`, these test different branch chain loss weights:
 
 ```bash
-cd recipe/spo/examples/BD/different_lambda
+cd recipe/spo/examples/Cluster/different_lambda
 bash Qwen2.5-0.5B-Instruct-GSM8K-lam0.1.sh  # lambda = 0.1
 bash Qwen2.5-0.5B-Instruct-GSM8K-lam0.5.sh  # lambda = 0.5
 bash Qwen2.5-0.5B-Instruct-GSM8K-lam2.0.sh  # lambda = 2.0
@@ -83,10 +83,10 @@ bash Qwen2.5-0.5B-Instruct-GSM8K-lam2.0.sh  # lambda = 2.0
 
 ### Sampling Distribution Experiments
 
-Located in `BD/different_sampling_distribution/`, these test different utility sampling distributions:
+Located in `Cluster/different_sampling_distribution/`, these test different utility sampling distributions:
 
 ```bash
-cd recipe/spo/examples/BD/different_sampling_distribution
+cd recipe/spo/examples/Cluster/different_sampling_distribution
 bash Qwen2.5-0.5B-Instruct-GSM8K-gamma0.1.sh   # gamma = 0.1 (low temperature)
 bash Qwen2.5-0.5B-Instruct-GSM8K-gamma1.0.sh   # gamma = 1.0 (medium)
 bash Qwen2.5-0.5B-Instruct-GSM8K-gamma3.0.sh   # gamma = 3.0 (high temperature)
@@ -95,10 +95,10 @@ bash Qwen2.5-0.5B-Instruct-GSM8K-random.sh     # random sampling baseline
 
 ### Scalability Tests
 
-Located in `BD/scalability/`, these test different parallelism configurations:
+Located in `Cluster/scalability/`, these test different parallelism configurations:
 
 ```bash
-cd recipe/spo/examples/BD/scalability
+cd recipe/spo/examples/Cluster/scalability
 bash Qwen2.5-0.5B-Instruct-GSM8K-p1b4.sh          # 1 process, batch 4
 bash Qwen2.5-0.5B-Instruct-GSM8K-p1b8.sh          # 1 process, batch 8
 bash Qwen2.5-0.5B-Instruct-GSM8K-p2b4.sh          # 2 processes, batch 4
@@ -107,10 +107,10 @@ bash Qwen2.5-0.5B-Instruct-GSM8K-p1b4-expandall.sh  # expand all branches
 
 ### Debug Scripts
 
-Located in `BD/debug/`, these are lightweight configurations for debugging:
+Located in `Cluster/debug/`, these are lightweight configurations for debugging:
 
 ```bash
-cd recipe/spo/examples/BD/debug
+cd recipe/spo/examples/Cluster/debug
 bash Qwen2.5-0.5B-Instruct-GSM8K-CRPO.sh
 bash Qwen2.5-3B-HotpotQA-CRPO.sh
 ```
@@ -126,7 +126,7 @@ Finds the best checkpoint from W&B logs by averaging accuracy across multiple da
 RUN_PATH = "your-team/project/run-id"
 
 # Run analysis
-python recipe/spo/examples/BD/find_best_avg_acc.py
+python recipe/spo/examples/Cluster/find_best_avg_acc.py
 ```
 
 Output shows Top 10 checkpoints ranked by average accuracy across:
@@ -137,7 +137,7 @@ Output shows Top 10 checkpoints ranked by average accuracy across:
 Tests API server connectivity:
 
 ```bash
-python recipe/spo/examples/BD/compare_with_baseline/Qwen2.5-3B-HotpotQA/test_server.py
+python recipe/spo/examples/Cluster/compare_with_baseline/Qwen2.5-3B-HotpotQA/test_server.py
 ```
 
 ## Key Configuration Parameters
