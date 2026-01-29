@@ -4,7 +4,7 @@ Ray Debug Tutorial
 Last updated: 04/23/2025
 
 
-.. _wuxibin89: https://github.com/wuxibin89
+.. _contributor: https://github.com/anonymous-contributor
 
 Author: Anonymous Contributors
 
@@ -17,7 +17,7 @@ Ray Distributed Debugger VSCode Extension (Recommended)
 
 1. Starting with Ray 2.39, Anyscale has introduced the `Ray Distributed Debugger <https://docs.ray.io/en/latest/ray-observability/ray-distributed-debugger.html>`_ VSCode extension. Follow the extension’s installation instructions, then add your cluster using the dashboard URL you obtained earlier.
 
-   .. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/debugger.png?raw=true
+   .. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/debugger.png?raw=true
       :alt: Ray Distributed Debugger VSCode extension screenshot
 
 2. Prerequisites.
@@ -28,7 +28,7 @@ Ray Distributed Debugger VSCode Extension (Recommended)
    - `ray[default]` >= 2.9.1  
    - `debugpy` >= 1.8.0  
 
-   .. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/readme.png?raw=true
+   .. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/readme.png?raw=true
       :alt: VSCode with Ray prerequisites
 
 3. Environment Variables.
@@ -69,14 +69,14 @@ Ray Distributed Debugger VSCode Extension (Recommended)
 
  Once the process hits the first `breakpoint()`, click the Ray Distributed Debugger icon in the VSCode sidebar to attach the debugger.
 
-   .. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/launch.png?raw=true
+   .. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/launch.png?raw=true
       :alt: Attaching VSCode debugger to Ray process
 
 7. Debugging With Multiple breakpoint().
 
    For each subsequent task, first disconnect the current debugger session, then click the extension icon again to attach to the next breakpoint.
 
-   .. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/disconnect.png?raw=true
+   .. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/disconnect.png?raw=true
       :alt: Disconnecting and reconnecting the debugger
 
 Legacy Ray Debugger
@@ -92,5 +92,5 @@ Legacy Ray Debugger
 
 2. Set up breakpoint in your code, and submit job to cluster. Then run ``ray debug`` to wait breakpoint:
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/legacy.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/legacy.png?raw=true
 

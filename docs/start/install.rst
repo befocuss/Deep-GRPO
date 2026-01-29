@@ -81,7 +81,7 @@ Community Image
 
 Community images are provided by the community, including the latest versions of vLLM and SGLang, and may include experimental features or configurations. And also works for other hardwares or platforms like AMD GPUs with ROCM or AWS EFA and Sagemaker.
 
-For latest vLLM with FSDP, please refer to `hiyouga/verl <https://hub.docker.com/r/hiyouga/verl>`_ repository and the latest version is ``hiyouga/verl:ngc-th2.6.0-cu126-vllm0.8.4-flashinfer0.2.2-cxx11abi0``.
+For latest vLLM with FSDP, please refer to `anonymous-org/verl <https://hub.docker.com/r/hiyouga/verl>`_ repository and the latest version is ``hiyouga/verl:ngc-th2.6.0-cu126-vllm0.8.4-flashinfer0.2.2-cxx11abi0``.
 
 For latest SGLang with FSDP, please refer to `ocss884/verl-sglang <https://hub.docker.com/r/ocss884/verl-sglang>`_ repository and the latest version is ``ocss884/verl-sglang:ngc-th2.6.0-cu126-sglang0.4.6.post5`` which is provided by SGLang RL Group.
 
@@ -256,7 +256,7 @@ Install with AMD GPUs - ROCM kernel support
 ------------------------------------------------------------------
 
 When you run on AMD GPUs (MI300) with ROCM platform, you cannot use the previous quickstart to run verl. You should follow the following steps to build a docker and run it. 
-If you encounter any issues in using AMD GPUs running verl, feel free to contact me - `Yusheng Su <https://anonymous-contributor.github.io/>`_.
+If you encounter any issues in using AMD GPUs running verl, feel free to contact me - `Anonymous Contributor <https://anonymous-contributor.github.io/>`_.
 
 Find the docker for AMD ROCm: `docker/Dockerfile.rocm <https://github.com/anonymous/anonymous-repo/blob/main/docker/Dockerfile.rocm>`_
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

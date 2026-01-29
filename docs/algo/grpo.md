@@ -62,7 +62,7 @@ Configure the following to enable DrGRPO, with all other parameters the same as 
 
 ## Reference Example
 
-Qwen2.5 GRPO training log and commands: [link](https://github.com/anonymous-user/anonymous-repo-data/blob/experiments/gsm8k/qwen2-7b-fsdp2.log)
+Qwen2.5 GRPO training log and commands: [link](https://github.com/anonymous/anonymous-repo-data/blob/experiments/gsm8k/qwen2-7b-fsdp2.log)
 
 ```bash
 bash examples/grpo_trainer/run_qwen3-8b.sh

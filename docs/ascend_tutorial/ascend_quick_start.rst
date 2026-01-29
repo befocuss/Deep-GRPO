@@ -180,7 +180,7 @@ vllm & vllm-ascend
 
 对于 SFT 类算法，我们期望在相同配置下华为昇腾设备与 A100 的 loss 平均绝对误差<= 2%。计算方式如下图。更多信息请参考 `精度计算说明 <https://www.hiascend.com/document/detail/zh/Pytorch/600/ptmoddevg/trainingmigrguide/LMaccuracy_0001.html>`_。
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/loss_comparison.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/loss_comparison.png?raw=true
    :alt: loss_comparison
 
 根据经验，对于 GRPO 等 RL 类算法，我们期望在相同配置下华为昇腾设备与 A100 的 rewards 平均绝对误差<= 4%，计算方式参考上图。

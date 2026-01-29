@@ -3,7 +3,7 @@ Multinode Training
 
 Last updated: 06/10/2025.
 
-.. _wuxibin89: https://github.com/wuxibin89
+.. _contributor: https://github.com/anonymous-contributor
 
 Author: Anonymous Contributors
 
@@ -17,21 +17,21 @@ Set up multinode ray cluster
 - GCS address: ``ray start --address=<address>``, where worker node should connect to.
 - Dashboard address: ``<address>:8265``, where you should submit job to the cluster.
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/head.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/head.png?raw=true
 
 2. Start worker node with ``ray start --address=<address>`` you get above.
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/worker.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/worker.png?raw=true
 
 3. Now you should see the cluster have 2 nodes with ``ray status``.
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/status.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/status.png?raw=true
 
 4. Additionally, you can access dashboard in the browser with the address you get above. 
 
 *Firewall rules maybe need configure to access the dashboard, if there's any trouble, please contact your network administrator.*
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/overview.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/overview.png?raw=true
 
 Submit job to ray cluster
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,7 +48,7 @@ Submit job to ray cluster
         trainer.nnodes=2 \
         ...
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/submit.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/submit.png?raw=true
 
 2. Then you can check the job status with the following commands:
 
@@ -61,8 +61,8 @@ Submit job to ray cluster
 
 4. We strongly recommend you to view job detail from dashboard in multinode training, because it provide more structure way to view the job information.
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/job.png?raw=true
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/job_detail.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/job.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/job_detail.png?raw=true
 
 
 Slurm
@@ -195,7 +195,7 @@ Ray Distributed Debugger VSCode Extension (Recommended)
 
 1. Starting with Ray 2.39, Anyscale has introduced the `Ray Distributed Debugger <https://docs.ray.io/en/latest/ray-observability/ray-distributed-debugger.html>`_ VSCode extension. Follow the extension’s installation instructions, then add your cluster using the dashboard URL you obtained earlier.
 
-   .. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/debugger.png?raw=true
+   .. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/debugger.png?raw=true
       :alt: Ray Distributed Debugger VSCode extension screenshot
 
 2. Prerequisites.
@@ -206,7 +206,7 @@ Ray Distributed Debugger VSCode Extension (Recommended)
    - `ray[default]` >= 2.9.1  
    - `debugpy` >= 1.8.0  
 
-   .. image:: https://github.com/aoshen524/verl/blob/main/docs/start/c7098b755ff689859837773a916c857.png?raw=true
+   .. image:: https://github.com/anonymous/verl/blob/main/docs/start/c7098b755ff689859837773a916c857.png?raw=true
       :alt: VSCode with Ray prerequisites
 
 3. Environment Variables.
@@ -233,7 +233,7 @@ Ray Distributed Debugger VSCode Extension (Recommended)
 
    The extension will detect active breakpoints and display them in VSCode.
 
-   .. image:: https://github.com/aoshen524/verl/blob/main/docs/start/4ddad74395c79a1402331c0ce73316f.png?raw=true
+   .. image:: https://github.com/anonymous/verl/blob/main/docs/start/4ddad74395c79a1402331c0ce73316f.png?raw=true
       :alt: Detected breakpoint in VSCode
 
    **Note:** Breakpoints are only supported inside functions decorated with `@ray.remote`.
@@ -250,14 +250,14 @@ Ray Distributed Debugger VSCode Extension (Recommended)
 
  Once the process hits the first `breakpoint()`, click the Ray Distributed Debugger icon in the VSCode sidebar to attach the debugger.
 
-   .. image:: https://github.com/aoshen524/verl/blob/main/docs/start/4ddad74395c79a1402331c0ce73316f.png?raw=true
+   .. image:: https://github.com/anonymous/verl/blob/main/docs/start/4ddad74395c79a1402331c0ce73316f.png?raw=true
       :alt: Attaching VSCode debugger to Ray process
 
 7. Debugging With Multiple breakpoint().
 
    For each subsequent task, first disconnect the current debugger session, then click the extension icon again to attach to the next breakpoint.
 
-   .. image:: https://github.com/aoshen524/verl/blob/main/docs/start/6e83c910a62c82fecb89c6619e001cd.png?raw=true
+   .. image:: https://github.com/anonymous/verl/blob/main/docs/start/6e83c910a62c82fecb89c6619e001cd.png?raw=true
       :alt: Disconnecting and reconnecting the debugger
 
 Legacy Ray Debugger
@@ -273,7 +273,7 @@ Legacy Ray Debugger
 
 2. Set up breakpoint in your code, and submit job to cluster. Then run ``ray debug`` to wait breakpoint:
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/ray/legacy.png?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/ray/legacy.png?raw=true
 
 
 Multi-node training on AMD clusters
@@ -281,7 +281,7 @@ Multi-node training on AMD clusters
 
 If you want to run multi-node training with slurm with Docker/Podman container on AMD Cluster, you can use the following script. 
 
-If you encounter any issues in using AMD GPUs running verl, please contact `Yusheng Su <https://anonymous-contributor.github.io/>`_.
+If you encounter any issues in using AMD GPUs running verl, please contact `Anonymous Contributor <https://anonymous-contributor.github.io/>`_.
 
 .. note::
     1. You need to use ``podman`` or ``docker`` in the following script. We will release the apptainer script later.

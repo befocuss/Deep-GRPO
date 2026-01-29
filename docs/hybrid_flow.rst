@@ -4,7 +4,7 @@ HybridFlow Programming Guide
 
 Last updated: 06/02/2025.
 
-.. _vermouth: https://github.com/vermouth1992
+.. _contributor: https://github.com/anonymous-contributor
 
 Author: Anonymous Contributors
 
@@ -19,7 +19,7 @@ DataFlow
 
 Dataflow is an abstraction of computations. Neural Network training is a typical dataflow. It can be represented by computational graph. 
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/dataflow.jpeg?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/dataflow.jpeg?raw=true
    :alt: The dataflow graph from CS231n 2024 lecture 4
 
 This figure [2]_ represents the computation graph of a polynomial function followed by a sigmoid function. In the data flow of neural network computation, each node represents an operator, and each edge represents the direction of forward/backward propagation. The computation graph determines the architecture of the neural network.
@@ -83,7 +83,7 @@ Overall Execution Diagram
 
 Below is a simplified diagram denoting the execution of a reinforcement learning job. In the diagram, the controller runs on a single process, while the generator/actor workers, critic workers run on multiple processes, placed with specific resource groups. For rollout, the controller passes the data to the generator to perform sample generation. When the rollout is done, the data is passed back to controller for the next step of the algorithm. Similar execution is done for other workers. With the hybrid controller design, the data flow and computation is decoupled to provide both efficiency in computation and flexibility in defining algorithm training loops.
 
-.. figure:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/driver_worker.png?raw=true
+.. figure:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/driver_worker.png?raw=true
    :alt: The execution diagram
 
 Codebase walkthrough (PPO)

@@ -133,7 +133,7 @@ of ``RayWorkerGroup``, two key steps occur:
 2. Methods decorated with ``@register`` are bound to ``RayWorkerGroup``:
    `RayWorkerGroup._bind_worker_method <https://github.com/anonymous/anonymous-repo/blob/c59ab2f4788f9a910836a9f2f53dcdb62dfa314e/verl/single_controller/ray/base.py#L214>`__
 
-.. figure:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/worker_group_init.png?raw=true
+.. figure:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/worker_group_init.png?raw=true
    :alt: initialization_and_binding_of_worker_group
 
    initialization_and_binding_of_worker_group
@@ -307,7 +307,7 @@ With ``verl``, the multiprocess program becomes:
    rollout = RayWorkerGroup(resource_pool=[4], RayClassWithArgs(Rollout))
    rollout.generate_sequences(batch)
 
-.. figure:: https://github.com/anonymous-user/anonymous-repo-assets/blob/main/docs/call_generate_sequences.png?raw=true
+.. figure:: https://github.com/anonymous/anonymous-repo-assets/blob/main/docs/call_generate_sequences.png?raw=true
    :alt: call_chain_of_generate_sequences
 
    call_chain_of_generate_sequences

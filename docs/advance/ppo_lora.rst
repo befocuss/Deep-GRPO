@@ -52,7 +52,7 @@ Best Practices and Notes
   - For a 32B model,with lora_rank=128,the training convergence speed and final performance are also almost identical to non-LoRA training.
   - More comprehensive reference results are coming soon.
 
-.. image:: https://github.com/anonymous-user/anonymous-repo-assets/blob/f2b80b8b26829124dd393b7a795a0640eff11644/docs/lora.jpg?raw=true
+.. image:: https://github.com/anonymous/anonymous-repo-assets/blob/f2b80b8b26829124dd393b7a795a0640eff11644/docs/lora.jpg?raw=true
 
 3. Reference configuration for RL training with the Qwen2.5-72B model using 8 x 80GB GPUs (increase lora_rank if needed):
 

@@ -187,4 +187,4 @@ If you use AMD GPUs (ROCm kernel), you need to add the following environment var
         export ROCR_VISIBLE_DEVICES=$HIP_VISIBLE_DEVICES
         export CUDA_VISIBLE_DEVICES=$HIP_VISIBLE_DEVICES
 
-If you encounter any issues in using AMD GPUs running VeRL, feel free to contact me - `Yusheng Su <https://anonymous-contributor.github.io/>`_.
+If you encounter any issues in using AMD GPUs running VeRL, feel free to contact me - `Anonymous Contributor <https://anonymous-contributor.github.io/>`_.
